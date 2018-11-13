@@ -1,0 +1,6 @@
+{
+  "model_name": "resnet101_v1_13k",
+  "path_to_ckpt": "graphs/resnet101_v1_13k.pb",
+  "num_classes": 8,
+  "label_map": "data/aadc_labels_13k.pbtxt"
+}

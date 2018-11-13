@@ -1,0 +1,44 @@
+item {
+  id: 1
+  name: 'person_crossing'
+}
+
+item {
+  id: 2
+  name: 'child'
+}
+
+item {
+  id: 3
+  name: 'stop_line_ahead'
+}
+
+item {
+  id: 4
+  name: 'car'
+}
+
+item {
+  id: 5
+  name: 'siren_on'
+}
+
+item {
+  id: 6
+  name: 'XCrossing'
+}
+
+item {
+  id: 7
+  name: 'TCrossing0'
+}
+
+item {
+  id: 8
+  name: 'TCrossing2'
+}
+
+item {
+  id: 9
+  name: 'TCrossing3'
+}

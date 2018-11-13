@@ -1,0 +1,6 @@
+{
+  "model_name": "resnet101_v1_siren",
+  "path_to_ckpt": "graphs/resnet101_v1_siren.pb",
+  "num_classes": 1,
+  "label_map": "data/aadc_labels_siren.pbtxt"
+}

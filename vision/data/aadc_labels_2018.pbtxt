@@ -1,0 +1,74 @@
+item {
+  id: 1
+  name: 'person_crossing'
+}
+
+item {
+  id: 2
+  name: 'person'
+}
+
+item {
+  id: 3
+  name: 'child'
+}
+
+item {
+  id: 4
+  name: 'stop_line_left'
+}
+
+item {
+  id: 5
+  name: 'stop_line_right'
+}
+
+item {
+  id: 6
+  name: 'stop_line_ahead'
+}
+
+item {
+  id: 7
+  name: 'stop_line_oncoming'
+}
+
+item {
+  id: 8
+  name: 'car'
+}
+
+item {
+  id: 9
+  name: 'crosswalk'
+}
+
+item {
+  id: 10
+  name: 'middle_lane'
+}
+
+item {
+  id: 11
+  name: 'siren_on'
+}
+
+item {
+  id: 12
+  name: 'XCrossing'
+}
+
+item {
+  id: 13
+  name: 'TCrossing0'
+}
+
+item {
+  id: 14
+  name: 'TCrossing2'
+}
+
+item {
+  id: 15
+  name: 'TCrossing3'
+}

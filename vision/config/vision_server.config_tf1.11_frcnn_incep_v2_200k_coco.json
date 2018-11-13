@@ -1,0 +1,6 @@
+{
+  "model_name": "aadc2018_frcnn_incep_v2_200k_coco",
+  "path_to_ckpt": "graphs/aadc2018_frcnn_incep_v2_200k_coco.pb",
+  "num_classes": 15,
+  "label_map": "data/aadc_labels_2018.pbtxt"
+}

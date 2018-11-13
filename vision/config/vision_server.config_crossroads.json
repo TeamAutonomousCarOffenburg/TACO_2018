@@ -1,0 +1,6 @@
+{
+  "model_name": "resnet101_v1_crossroads",
+  "path_to_ckpt": "graphs/resnet101_v1_crossroads.pb",
+  "num_classes": 5,
+  "label_map": "data/aadc_labels_crossroads.pbtxt"
+}

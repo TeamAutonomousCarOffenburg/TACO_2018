@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="srcTools"/>
+	<classpathentry kind="src" path="config"/>
+	<classpathentry kind="src" output="build/testClasses" path="srcTest"/>
+	<classpathentry kind="src" path="srcLearning"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/base"/>
+	<classpathentry kind="lib" path="/base/lib/runtime/commons-math3-3.3.jar"/>
+	<classpathentry kind="lib" path="/base/lib/runtime/gson-2.7.jar"/>
+	<classpathentry kind="lib" path="/base/lib/test/junit-4.8.1.jar"/>
+	<classpathentry kind="lib" path="/base/lib/test/mockito-all-2.0.2-beta.jar"/>
+	<classpathentry kind="lib" path="/base/lib/tools/jogamp/jogl-all.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="lib/tools/cloning-1.9.5.jar"/>
+	<classpathentry kind="lib" path="lib/runtime/kdoLib.jar"/>
+	<classpathentry kind="output" path="build/classes"/>
+</classpath>

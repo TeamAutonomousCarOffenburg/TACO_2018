@@ -1,0 +1,6 @@
+{
+  "model_name": "aadc2018_rfcn_200k_coco_slim",
+  "path_to_ckpt": "graphs/aadc2018_rfcn_200k_coco_slim.pb",
+  "num_classes": 9,
+  "label_map": "data/aadc_labels_2018_slim.pbtxt"
+}

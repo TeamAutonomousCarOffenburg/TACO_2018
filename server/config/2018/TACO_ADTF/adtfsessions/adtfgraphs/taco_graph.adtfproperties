@@ -1,0 +1,1047 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<property_file xmlns="adtf/xsd/properties">
+  <file_version>
+    <major>1</major>
+    <minor>0</minor>
+  </file_version>
+  <property_packages>
+    <property_package>
+      <name>default</name>
+      <property_sets>
+        <property_set>
+          <name>graphs/filter</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>streaming_graphs/player</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>streaming_graphs/player/streaminggraphdock/Filter Graph Dock</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>streaming_graphs/player/streaming_sources/Arduino Ultrasonic Sensor</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>streaming_graphs/player/streaming_sources/Arduino Ultrasonic Sensor/output_pins/side_left</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>streaming_graphs/player/streaming_sources/Arduino Ultrasonic Sensor/output_pins/side_right</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>streaming_graphs/player/streaming_sources/Arduino Ultrasonic Sensor/output_pins/rear_left</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>streaming_graphs/player/streaming_sources/Arduino Ultrasonic Sensor/output_pins/rear_center</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>streaming_graphs/player/streaming_sources/Arduino Ultrasonic Sensor/output_pins/rear_right</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>streaming_graphs/player/streaming_dock_in_ports/ultrasonic_struct</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>streaming_graphs/player/streaming_sources/Arduino Ultrasonic Sensor/output_pins/ultrasonic_struct</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>graphs/filter/streaming_in_ports/ultrasonic_struct</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>graphs/filter/streaming_in_ports/iner_meas_unit</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>graphs/filter/streaming_in_ports/laser_scanner</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>graphs/filter/streaming_in_ports/wheel_right</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>graphs/filter/streaming_in_ports/wheel_left</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>streaming_graphs/player/streaming_sources/Arduino EgoMotion Sensor</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>streaming_graphs/player/streaming_sources/Arduino EgoMotion Sensor/output_pins/iner_meas_unit</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>streaming_graphs/player/streaming_sources/Arduino EgoMotion Sensor/output_pins/wheel_left</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>streaming_graphs/player/streaming_sources/Arduino EgoMotion Sensor/output_pins/wheel_right</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>streaming_graphs/player/streaming_dock_in_ports/iner_meas_unit</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>streaming_graphs/player/streaming_dock_in_ports/laser_scanner</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>streaming_graphs/player/streaming_dock_in_ports/wheel_left</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>streaming_graphs/player/streaming_dock_in_ports/wheel_right</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>streaming_graphs/player/streaming_sources/Laser Scanner</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>streaming_graphs/player/streaming_sources/Laser Scanner/output_pins/output</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>graphs/filter/streaming_out_ports/steering</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>graphs/filter/streaming_out_ports/speed</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>streaming_graphs/player/streaming_sinks/Arduino Actuator</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>streaming_graphs/player/streaming_dock_out_ports/steering</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>streaming_graphs/player/streaming_dock_out_ports/speed</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>streaming_graphs/player/connections/Filter Graph Dock.steering_Arduino Actuator.steering</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>streaming_graphs/player/streaming_sinks/Arduino Actuator/input_pins/steering</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>streaming_graphs/player/connections/Filter Graph Dock.speed_Arduino Actuator.speed</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>streaming_graphs/player/streaming_sinks/Arduino Actuator/input_pins/speed</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>streaming_graphs/player/streaming_sources/Basler Camera</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>streaming_graphs/player/streaming_sources/Basler Camera/output_pins/video_rgb</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>streaming_graphs/player/streaming_dock_in_ports/video_rgb</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>graphs/filter/filters/SteeringInterpolation</name>
+          <properties>
+            <property>
+              <name>trigger/Configuration File For Interpolation</name>
+              <value>../../../../../../../../../configuration_files/SteeringConfig.xml</value>
+              <type>cFilename</type>
+            </property>
+            <property>
+              <name>trigger/Print initial table to Console</name>
+              <value>true</value>
+              <type>tBool</type>
+            </property>
+          </properties>
+        </property_set>
+        <property_set>
+          <name>graphs/filter/sample_streams/stream_steering</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>graphs/filter/filters/SteeringInterpolation/input_pins/input_value</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>graphs/filter/filters/SteeringInterpolation/output_pins/output_value</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>graphs/filter/filters/SteeringInterpolation/runners/trigger</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>graphs/filter/streaming_in_ports/video_rgb</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>graphs/filter/connections/Sample Stream._SteeringInterpolation.input_value</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>graphs/filter/connections/SteeringInterpolation.output_value_steering.</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>graphs/filter/sample_streams/stream_ROI_Video</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>graphs/filter/streaming_out_ports/head_light</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>graphs/filter/streaming_out_ports/turn_signal_left</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>graphs/filter/streaming_out_ports/turn_signal_right</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>graphs/filter/streaming_out_ports/brake_light</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>graphs/filter/streaming_out_ports/hazard_light</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>graphs/filter/streaming_out_ports/reverse_light</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>streaming_graphs/player/streaming_dock_out_ports/head_light</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>streaming_graphs/player/streaming_dock_out_ports/turn_signal_left</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>streaming_graphs/player/streaming_dock_out_ports/turn_signal_right</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>streaming_graphs/player/streaming_dock_out_ports/brake_light</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>streaming_graphs/player/streaming_dock_out_ports/hazard_light</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>streaming_graphs/player/streaming_dock_out_ports/reverse_light</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>streaming_graphs/player/connections/Filter Graph Dock.head_light_Arduino Actuator.head_light</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>streaming_graphs/player/streaming_sinks/Arduino Actuator/input_pins/head_light</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>streaming_graphs/player/connections/Filter Graph Dock.turn_signal_left_Arduino Actuator.turn_signal_left</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>streaming_graphs/player/streaming_sinks/Arduino Actuator/input_pins/turn_signal_left</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>streaming_graphs/player/connections/Filter Graph Dock.turn_signal_right_Arduino Actuator.turn_signal_right</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>streaming_graphs/player/streaming_sinks/Arduino Actuator/input_pins/turn_signal_right</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>streaming_graphs/player/connections/Filter Graph Dock.brake_light_Arduino Actuator.brake_light</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>streaming_graphs/player/streaming_sinks/Arduino Actuator/input_pins/brake_light</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>streaming_graphs/player/connections/Filter Graph Dock.hazard_light_Arduino Actuator.hazard_light</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>streaming_graphs/player/streaming_sinks/Arduino Actuator/input_pins/hazard_light</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>streaming_graphs/player/connections/Filter Graph Dock.reverse_light_Arduino Actuator.reverse_light</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>streaming_graphs/player/streaming_sinks/Arduino Actuator/input_pins/reverse_light</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>graphs/videograph</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>graphs/videograph/filters/TACO Fisheye UndistortionROI</name>
+          <properties>
+            <property>
+              <name>trigger/calibration file</name>
+              <value>../../../../../../../../../configuration_files/basler_fisheye_intrinsic_calib.yml</value>
+              <type>cFilename</type>
+            </property>
+          </properties>
+        </property_set>
+        <property_set>
+          <name>graphs/videograph/filters/TACO Fisheye UndistortionROI/input_pins/input</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>graphs/videograph/filters/TACO Image Writer</name>
+          <properties>
+            <property>
+              <name>trigger/Frames per second</name>
+              <value>10</value>
+              <type>tInt32</type>
+            </property>
+          </properties>
+        </property_set>
+        <property_set>
+          <name>graphs/videograph/filters/TACO Camera Image Relay</name>
+          <properties>
+            <property>
+              <name>trigger/Destination Server PORT</name>
+              <value>1337</value>
+              <type>tInt32</type>
+            </property>
+          </properties>
+        </property_set>
+        <property_set>
+          <name>graphs/videograph/sample_streams/stream_ROI</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>graphs/videograph/connections/TACO Fisheye UndistortionROI.output_Sample Stream.</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>graphs/videograph/filters/TACO Fisheye UndistortionROI/output_pins/output</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>graphs/videograph/connections/Sample Stream._TACO Image Writer.in</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>graphs/videograph/filters/TACO Image Writer/input_pins/in</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>graphs/videograph/connections/Sample Stream._TACO Camera Image Relay.in</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>graphs/videograph/filters/TACO Camera Image Relay/input_pins/in</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>graphs/filter/subgraphs/video_graph</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>graphs/videograph/input_data_ports/video_rgb</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>graphs/videograph/sample_streams/stream_input</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>graphs/videograph/connections/video_rgb._Sample Stream_1.</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>graphs/videograph/connections/Sample Stream_1._TACO Fisheye UndistortionROI.input</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>graphs/videograph/output_data_ports/video_rgb_out</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>graphs/videograph/connections/Sample Stream._video_rgb_out.</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>graphs/filter/connections/video_rgb._video_graph.video_rgb</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>graphs/filter/connections/video_graph.video_rgb_out_stream_ROI_Video.</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>graphs/videograph/filters/Vision Server Output</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>graphs/videograph/filters/Vision Server Output/input_pins/video</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>streaming_graphs/player/streaming_sinks/Jury Communication TCP Sender</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>streaming_graphs/player/streaming_sources/Jury Communication TCP Receiver</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>graphs/filter/streaming_in_ports/jury_struct</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>graphs/filter/streaming_in_ports/maneuver_list</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>graphs/filter/streaming_in_ports/road_sign_map</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>streaming_graphs/player/streaming_dock_in_ports/jury_struct</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>streaming_graphs/player/streaming_dock_in_ports/maneuver_list</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>streaming_graphs/player/streaming_dock_in_ports/road_sign_map</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>streaming_graphs/player/streaming_sources/Jury Communication TCP Receiver/output_pins/jury_struct</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>streaming_graphs/player/streaming_sources/Jury Communication TCP Receiver/output_pins/maneuver_list</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>streaming_graphs/player/streaming_sources/Jury Communication TCP Receiver/output_pins/open_drive_map</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>streaming_graphs/player/streaming_sources/Jury Communication TCP Receiver/output_pins/road_sign_map</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>graphs/filter/streaming_out_ports/driver_struct</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>streaming_graphs/player/streaming_dock_out_ports/driver_struct</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>streaming_graphs/player/connections/Filter Graph Dock.drive_struct_Jury Communication TCP Sender.driver_struct</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>streaming_graphs/player/streaming_sinks/Jury Communication TCP Sender/input_pins/driver_struct</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>streaming_graphs/player/binding_proxys/Binding Proxy</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>streaming_graphs/player/connections/Jury Communication TCP Receiver.socket_Binding Proxy.</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>streaming_graphs/player/streaming_sources/Jury Communication TCP Receiver/binding_servers/socket</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>streaming_graphs/player/connections/Binding Proxy._Jury Communication TCP Sender.socket</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>streaming_graphs/player/streaming_sinks/Jury Communication TCP Sender/binding_clients/socket</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>streaming_graphs/player/connections/Arduino Ultrasonic Sensor.ultrasonic_struct_Filter Graph Dock.ultrasonic_struct</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>streaming_graphs/player/connections/Laser Scanner.output_Filter Graph Dock.laser_scanner</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>streaming_graphs/player/connections/Arduino EgoMotion Sensor.iner_meas_unit_Filter Graph Dock.iner_meas_unit</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>streaming_graphs/player/connections/Arduino EgoMotion Sensor.wheel_left_Filter Graph Dock.wheel_left</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>streaming_graphs/player/connections/Arduino EgoMotion Sensor.wheel_right_Filter Graph Dock.wheel_right</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>streaming_graphs/player/connections/Basler Camera.video_rgb_Filter Graph Dock.video_rgb</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>streaming_graphs/player/connections/Jury Communication TCP Receiver.jury_struct_Filter Graph Dock.jury_struct</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>streaming_graphs/player/connections/Jury Communication TCP Receiver.maneuver_list_Filter Graph Dock.maneuver_list</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>streaming_graphs/player/connections/Jury Communication TCP Receiver.road_sign_map_Filter Graph Dock.road_sign_map</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>graphs/filter/sample_streams/stream_jury</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>graphs/filter/connections/jury_struct._Sample Stream_1.</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>graphs/videograph/filters/TACO Camera Image Relay/output_pins/out</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>graphs/videograph/sample_streams/stream_vision_server</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>graphs/videograph/connections/TACO Camera Image Relay.out_Sample Stream_2.</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>graphs/videograph/connections/Sample Stream_2._Demo Qt Video Display.video</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>graphs/videograph/filters/Output_Undistortion</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>graphs/videograph/connections/Sample Stream._Demo Qt Video Display_1.video</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>graphs/videograph/filters/Output_Undistortion/input_pins/video</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>graphs/marker_localizer</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>graphs/marker_localizer/filters/Marker Detector</name>
+          <properties>
+            <property>
+              <name>trigger/Calibration File</name>
+              <value>../../../../../../../../../configuration_files/basler_afterFisheye_intrinsic_calibration.yml</value>
+              <type>cFilename</type>
+            </property>
+            <property>
+              <name>trigger/Detector Parameter File</name>
+              <value>../../../../../../../../../configuration_files/detector_params.yml</value>
+              <type>cFilename</type>
+            </property>
+            <property>
+              <name>trigger/Marker Roi::height</name>
+              <value>500</value>
+              <type>tFloat32</type>
+            </property>
+            <property>
+              <name>trigger/Marker Roi::width</name>
+              <value>1500</value>
+              <type>tFloat32</type>
+            </property>
+            <property>
+              <name>trigger/Show Roi</name>
+              <value>true</value>
+              <type>tBool</type>
+            </property>
+          </properties>
+        </property_set>
+        <property_set>
+          <name>graphs/marker_localizer/filters/Marker Positioning</name>
+          <properties>
+            <property>
+              <name>MarkerPos/Optional Roadsign File</name>
+              <value>../../../../../../../../../configuration_files/roadSigns.xml</value>
+              <type>cFilename</type>
+            </property>
+          </properties>
+        </property_set>
+        <property_set>
+          <name>graphs/marker_localizer/filters/Marker Positioning/output_pins/position</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>graphs/marker_localizer/filters/Marker Detector/output_pins/road_sign_ext</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>graphs/marker_localizer/filters/Marker Positioning/input_pins/road_sign_ext</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>graphs/marker_localizer/sample_streams/stream_roadsign_ext</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>graphs/marker_localizer/connections/Sample Stream_1._Marker Positioning.road_sign_ext</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>graphs/marker_localizer/input_data_ports/input</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>graphs/marker_localizer/sample_streams/stream_video_input</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>graphs/marker_localizer/connections/input._Sample Stream_2.</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>graphs/marker_localizer/connections/Sample Stream_2._Marker Detector.input</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>graphs/marker_localizer/filters/Marker Detector/input_pins/input</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>graphs/marker_localizer/input_data_ports/imu</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>graphs/marker_localizer/input_data_ports/road_sign_map</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>graphs/marker_localizer/sample_streams/stream_speed</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>graphs/marker_localizer/sample_streams/stream_imu</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>graphs/marker_localizer/sample_streams/stream_roadsign_map</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>graphs/marker_localizer/connections/imu._Sample Stream_4.</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>graphs/marker_localizer/connections/road_sign_map._Sample Stream_5.</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>graphs/marker_localizer/connections/Sample Stream_3._Marker Positioning.speed</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>graphs/marker_localizer/filters/Marker Positioning/input_pins/speed</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>graphs/marker_localizer/connections/Sample Stream_4._Marker Positioning.imu</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>graphs/marker_localizer/filters/Marker Positioning/input_pins/imu</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>graphs/marker_localizer/connections/Sample Stream_5._Marker Positioning.road_sign_map</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>graphs/marker_localizer/filters/Marker Positioning/input_pins/road_sign_map</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>graphs/filter/subgraphs/Marker Localizer</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>graphs/filter/connections/stream_ROI_Video._Marker Localizer.input</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>graphs/filter/connections/iner_meas_unit._Marker Localizer.imu</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>graphs/filter/connections/road_sign_map._Marker Localizer.road_sign_map</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>graphs/marker_localizer/filters/ConverterWheels</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>graphs/marker_localizer/connections/ConverterWheels.vehicle_speed_Sample Stream_3.</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>graphs/marker_localizer/input_data_ports/wheel_left</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>graphs/marker_localizer/filters/ConverterWheels/output_pins/vehicle_speed</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>graphs/marker_localizer/filters/ConverterWheels/input_pins/wheel_left</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>graphs/marker_localizer/sample_streams/stream_wheel_left</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>graphs/marker_localizer/connections/wheel_left._Sample Stream_6.</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>graphs/marker_localizer/connections/Sample Stream_6._ConverterWheels.wheel_left</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>graphs/marker_localizer/sample_streams/stream_wheel_right</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>graphs/marker_localizer/input_data_ports/wheel_right</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>graphs/marker_localizer/connections/wheel_right._Sample Stream_7.</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>graphs/marker_localizer/connections/Sample Stream_7._ConverterWheels.wheel_right</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>graphs/marker_localizer/filters/ConverterWheels/input_pins/wheel_right</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>graphs/marker_localizer/filters/Marker Detector/output_pins/output</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>graphs/marker_localizer/sample_streams/stream_roadsign_video</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>graphs/marker_localizer/filters/Video Output with Marker Detection</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>graphs/marker_localizer/connections/Sample Stream_8._Demo Qt Video Display.video</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>graphs/marker_localizer/filters/Video Output with Marker Detection/input_pins/video</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>graphs/marker_localizer/sample_streams/stream_position</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>graphs/marker_localizer/connections/Marker Positioning.position_Sample Stream.</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>graphs/marker_localizer/output_data_ports/position</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>graphs/marker_localizer/connections/Sample Stream._position.</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>graphs/filter/connections/wheel_left._Marker Localizer.wheel_left</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>graphs/filter/connections/wheel_right._Marker Localizer.wheel_right</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>graphs/filter/sample_streams/stream_ADTF_position</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>graphs/filter/connections/Marker Localizer.position_Sample Stream_2.</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>graphs/marker_localizer/connections/Marker Detector.output_stream_roadsign_video.</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>graphs/marker_localizer/connections/Marker Detector.road_sign_ext_stream_roadsign_ext.</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>graphs/filter/streaming_out_ports/position</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>streaming_graphs/player/streaming_dock_out_ports/position</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>graphs/marker_localizer/output_data_ports/road_sign_ext</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>graphs/marker_localizer/connections/stream_roadsign_ext._road_sign_ext.</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>graphs/filter/sample_streams/stream_roadsign</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>graphs/filter/connections/Marker Localizer.road_sign_ext_stream_roadsign.</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>services/kernel.service.adtf</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>services/reference_clock.service.adtf</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>services/signal_registry.service.adtf</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>services/media_description.service.adtf</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>services/adtf_file_support.service.adtf</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>graphs/filter/filters/TACO Runtime Service</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>graphs/filter/connections/ultrasonic_struct._TACO Runtime Service.ultrasonic_struct</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>graphs/filter/filters/TACO Runtime Service/input_pins/ultrasonic_struct</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>graphs/filter/connections/iner_meas_unit._TACO Runtime Service.iner_meas_unit</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>graphs/filter/filters/TACO Runtime Service/input_pins/iner_meas_unit</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>graphs/filter/connections/wheel_left._TACO Runtime Service.wheel_left</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>graphs/filter/filters/TACO Runtime Service/input_pins/wheel_left</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>graphs/filter/connections/wheel_right._TACO Runtime Service.wheel_right</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>graphs/filter/filters/TACO Runtime Service/input_pins/wheel_right</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>graphs/filter/connections/laser_scanner._TACO Runtime Service.laser_scanner</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>graphs/filter/filters/TACO Runtime Service/input_pins/laser_scanner</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>graphs/filter/connections/stream_jury._TACO Runtime Service.jury_struct</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>graphs/filter/filters/TACO Runtime Service/input_pins/jury_struct</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>graphs/filter/connections/stream_ADTF_position._TACO Runtime Service.marker_position</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>graphs/filter/filters/TACO Runtime Service/input_pins/marker_position</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>graphs/filter/connections/stream_roadsign._TACO Runtime Service.road_sign_ext</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>graphs/filter/filters/TACO Runtime Service/input_pins/road_sign_ext</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>graphs/filter/connections/stream_ROI_Video._TACO Runtime Service.camera</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>graphs/filter/filters/TACO Runtime Service/input_pins/camera</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>graphs/filter/connections/maneuver_list._TACO Runtime Service.maneuver_list</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>graphs/filter/filters/TACO Runtime Service/input_pins/maneuver_list</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>graphs/filter/connections/TACO Runtime Service.steering_stream_steering.</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>graphs/filter/filters/TACO Runtime Service/output_pins/steering</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>graphs/filter/connections/TACO Runtime Service.speed_speed.</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>graphs/filter/filters/TACO Runtime Service/output_pins/speed</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>graphs/filter/connections/TACO Runtime Service.head_light_head_light.</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>graphs/filter/filters/TACO Runtime Service/output_pins/head_light</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>graphs/filter/connections/TACO Runtime Service.reverse_light_reverse_light.</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>graphs/filter/filters/TACO Runtime Service/output_pins/reverse_light</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>graphs/filter/connections/TACO Runtime Service.brake_light_brake_light.</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>graphs/filter/filters/TACO Runtime Service/output_pins/brake_light</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>graphs/filter/connections/TACO Runtime Service.hazard_light_hazard_light.</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>graphs/filter/filters/TACO Runtime Service/output_pins/hazard_light</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>graphs/filter/connections/TACO Runtime Service.turn_signal_left_turn_signal_left.</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>graphs/filter/filters/TACO Runtime Service/output_pins/turn_signal_left</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>graphs/filter/connections/TACO Runtime Service.turn_signal_right_turn_signal_right.</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>graphs/filter/filters/TACO Runtime Service/output_pins/turn_signal_right</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>graphs/filter/connections/TACO Runtime Service.driver_struct_driver_struct.</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>graphs/filter/filters/TACO Runtime Service/output_pins/driver_struct</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>graphs/filter/connections/TACO Runtime Service.position_position.</name>
+          <properties/>
+        </property_set>
+        <property_set>
+          <name>graphs/filter/filters/TACO Runtime Service/output_pins/position</name>
+          <properties/>
+        </property_set>
+      </property_sets>
+    </property_package>
+  </property_packages>
+</property_file>
