@@ -1,0 +1,12 @@
+language: java
+
+addons:
+  apt:
+    packages:
+    - ant-optional
+
+jdk:
+  - oraclejdk8
+
+script:
+  - ant -f build.xml build AllBaseTests

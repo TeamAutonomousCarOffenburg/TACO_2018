@@ -1,0 +1,46 @@
+/*******************************************************************************
+ * Copyright 2008, 2012 Hochschule Offenburg
+ * Klaus Dorer, Mathias Ehret, Stefan Glaser, Thomas Huber, Fabian Korak,
+ * Simon Raffeiner, Srinivasa Ragavan, Thomas Rinklin,
+ * Joachim Schilling, Ingo Schindler, Rajit Shahi, Bjoern Weiler
+ *
+ * This file is part of magmaOffenburg.
+ *
+ * magmaOffenburg is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * magmaOffenburg is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with magmaOffenburg. If not, see <http://www.gnu.org/licenses/>.
+ *******************************************************************************/
+package hso.autonomy.tools.developer.bundles.developer.explorer.model;
+
+import java.util.List;
+
+import javax.swing.Action;
+
+import hso.autonomy.tools.util.bundleFramework.extension.ExtensionHandle;
+
+public interface IExplorer {
+	List<ITreeNode> getActiveEntities();
+
+	List<ExtensionHandle<ITreeNode>> getAvailableEntities();
+
+	List<Action> getActionList(Class<?> actionClass);
+
+	void registerAction(Action action, Class<?> actionClass);
+
+	void activateEntity(ITreeNode node);
+
+	void deactivateEntity(ITreeNode node);
+
+	boolean addListener(IExplorerListener listener);
+
+	boolean removeListener(IExplorerListener listener);
+}

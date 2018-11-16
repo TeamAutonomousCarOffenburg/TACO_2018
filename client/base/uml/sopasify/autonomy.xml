@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Checks xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="checkdescriptor.schema.xsd">
+	<!-- command, run in base folder: 
+	sopasify check -r -f src -/-report html -/-descriptor uml\sopasify\autonomy.xml-->
+	<IllegalDependencyCheck>
+		<!-- Top level architecture -->
+		<Component name="hso.autonomy.agent.communication">
+			<Rule name="communication may not depend on other layers">
+				<Forbids>
+					<Package>hso.autonomy.agent.agentruntime.</Package>
+					<Package>hso.autonomy.agent.decision.</Package>
+					<Package>hso.autonomy.agent.model.</Package>
+				</Forbids>
+			</Rule>
+		</Component>
+		<Component name="hso.autonomy.agent.model">
+			<Rule name="model may not depend on higher layers">
+				<Forbids>
+					<Package>hso.autonomy.agent.agentruntime.</Package>
+					<Package>hso.autonomy.agent.decision.</Package>
+				</Forbids>
+			</Rule>
+		</Component>
+		<Component name="hso.autonomy.agent.decision">
+			<Rule name="decision may only depend on model">
+				<Forbids>
+					<Package>hso.autonomy.agent.agentruntime.</Package>
+					<Package>hso.autonomy.agent.communication.</Package>
+				</Forbids>
+			</Rule>
+		</Component>
+		<!-- Second level architecture -->
+		<!-- Communication -->
+		<Component name="hso.autonomy.agent.communication.perception">
+			<Rule name="second level violation">
+				<Forbids>
+					<Package>hso.autonomy.agent.communication.action.</Package>
+					<Package>hso.autonomy.agent.communication.channel.</Package>
+				</Forbids>
+			</Rule>
+		</Component>
+		<Component name="hso.autonomy.agent.communication.action">
+			<Rule name="second level violation">
+				<Forbids>
+					<Package>hso.autonomy.agent.communication.perception.</Package>
+					<Package>hso.autonomy.agent.communication.channel.</Package>
+				</Forbids>
+			</Rule>
+		</Component>
+		<!-- Model -->
+		<Component name="hso.autonomy.agent.model.agentmeta">
+			<Rule name="second level violation">
+				<Forbids>
+					<Package>hso.autonomy.agent.model.agentmodel.</Package>
+					<Package>hso.autonomy.agent.model.worldmodel.</Package>
+					<Package>hso.autonomy.agent.model.worldmeta.</Package>
+					<Package>hso.autonomy.agent.model.thoughtmodel.</Package>
+				</Forbids>
+			</Rule>
+		</Component>
+		<Component name="hso.autonomy.agent.model.agentmodel">
+			<Rule name="second level violation">
+				<Forbids>
+					<Package>hso.autonomy.agent.model.worldmodel.</Package>
+					<Package>hso.autonomy.agent.model.worldmeta.</Package>
+					<Package>hso.autonomy.agent.model.thoughtmodel.</Package>
+				</Forbids>
+			</Rule>
+		</Component>
+		<Component name="hso.autonomy.agent.model.worldmeta">
+			<Rule name="second level violation">
+				<Forbids>
+					<Package>hso.autonomy.agent.model.agentmeta.</Package>
+					<Package>hso.autonomy.agent.model.agentmodel.</Package>
+					<Package>hso.autonomy.agent.model.worldmodel.</Package>
+					<Package>hso.autonomy.agent.model.thoughtmodel.</Package>
+				</Forbids>
+			</Rule>
+		</Component>
+		<Component name="hso.autonomy.agent.model.worldmodel">
+			<Rule name="second level violation">
+				<Forbids>
+					<Package>hso.autonomy.agent.model.agentmeta.</Package>
+					<Package>hso.autonomy.agent.model.thoughtmodel.</Package>
+				</Forbids>
+			</Rule>
+		</Component>
+		<Component name="hso.autonomy.agent.model.thoughtmodel">
+			<Rule name="second level violation">
+				<Forbids>
+					<Package>hso.autonomy.agent.model.agentmeta.</Package>
+					<Package>hso.autonomy.agent.model.worldmeta.</Package>
+				</Forbids>
+			</Rule>
+		</Component>
+		<!-- Decision -->
+		<Component name="hso.autonomy.agent.decision.behavior">
+			<Rule name="second level violation">
+				<Forbids>
+					<Package>hso.autonomy.agent.decision.decisionmaker.</Package>
+				</Forbids>
+			</Rule>
+		</Component>
+
+	</IllegalDependencyCheck>
+</Checks>

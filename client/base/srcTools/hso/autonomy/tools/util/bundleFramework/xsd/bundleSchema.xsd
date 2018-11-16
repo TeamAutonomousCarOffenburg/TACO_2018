@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	elementFormDefault="qualified">
+	
+	<!-- Elemente -->
+	<!-- Root-Element -->
+	<xsd:element name="bundle">
+	<xsd:complexType>
+		<xsd:sequence>
+			<xsd:element name="services" type="serviceDescriptor_list" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="extensionPoints" type="extensionPointDescriptor_list" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="extensions" type="extensionDescriptor_list" minOccurs="0" maxOccurs="1"/>
+		</xsd:sequence>
+		<xsd:attribute name="name" type="xsd:string" use="required"/>
+		<xsd:attribute name="bundleActivator" type="xsd:string" use="required"/>
+	</xsd:complexType>
+	</xsd:element>
+	
+	
+	
+	<!-- Typen -->
+	<!-- Listen-Typen -->
+	<xsd:complexType name="serviceDescriptor_list">
+		<xsd:sequence>
+			<xsd:element name="service" type="service_type" minOccurs="0" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	
+	<xsd:complexType name="extensionPointDescriptor_list">
+		<xsd:sequence>
+			<xsd:element name="extensionPoint" type="extensionPoint_type" minOccurs="0" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	
+	<xsd:complexType name="extensionDescriptor_list">
+		<xsd:sequence>
+			<xsd:element name="extension" type="extension_type" minOccurs="0" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	
+	<!-- Hilfs-Typen -->
+	<xsd:complexType name="service_type">
+		<xsd:sequence>
+			<xsd:element name="dependency" type="dependency_type" minOccurs="0" maxOccurs="unbounded"/>
+		</xsd:sequence>
+		<xsd:attribute name="serviceID" type="xsd:string" use="required"/>
+		<xsd:attribute name="serviceInterface" type="xsd:string" use="required"/>
+	</xsd:complexType>
+	
+	<xsd:complexType name="extensionPoint_type">
+		<xsd:attribute name="extensionPointID" type="xsd:string" use="required"/>
+		<xsd:attribute name="extensionPointInterface" type="xsd:string" use="required"/>
+	</xsd:complexType>
+	
+	<xsd:complexType name="extension_type">
+		<xsd:sequence>
+			<xsd:element name="dependency" type="dependency_type" minOccurs="0" maxOccurs="unbounded"/>
+		</xsd:sequence>
+		<xsd:attribute name="extensionID" type="xsd:string" use="required"/>
+		<xsd:attribute name="extensionPointID" type="xsd:string" use="required"/>
+		<xsd:attribute name="extensionPointInterface" type="xsd:string" use="required"/>
+	</xsd:complexType>
+	
+	<xsd:complexType name="dependency_type">
+		<xsd:attribute name="serviceID" type="xsd:string" use="required"/>
+	</xsd:complexType>
+</xsd:schema>

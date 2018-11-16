@@ -1,0 +1,57 @@
+<bundle xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:noNamespaceSchemaLocation="../../../util/bundleFramework/xsd/bundleSchema.xsd"
+		name="developer"
+		bundleActivator="hso.autonomy.tools.developer.bundles.developer.DeveloperBundleActivator">
+	
+	<services>
+		<service serviceID="developer.windowManager"
+				serviceInterface="hso.autonomy.tools.developer.bundles.developer.window.IWindowManager">
+		</service>
+		<service serviceID="developer.perspectiveManager"
+				serviceInterface="hso.autonomy.tools.developer.bundles.developer.perspective.IPerspectiveManager">
+		</service>
+		<service serviceID="developer.processor"
+				serviceInterface="hso.autonomy.tools.developer.bundles.developer.processor.model.IProcessor">
+		</service>
+		<service serviceID="developer.explorer"
+				serviceInterface="hso.autonomy.tools.developer.bundles.developer.explorer.model.IExplorer">
+		</service>		
+	</services>
+	
+	<extensionPoints>
+		<extensionPoint extensionPointID="developer.perspectiveManager.view"
+				extensionPointInterface="hso.autonomy.tools.developer.bundles.developer.perspective.IViewDescriptor" />
+		<extensionPoint extensionPointID="developer.windowManager.menu"
+				extensionPointInterface="javax.swing.JMenu" />
+		<extensionPoint extensionPointID="developer.windowManager.openAction"
+				extensionPointInterface="javax.swing.AbstractAction" />
+		<extensionPoint	extensionPointID="developer.windowManager.statusObserver"
+				extensionPointInterface="hso.autonomy.tools.developer.bundles.developer.window.statusBar.IStatusObserver" />
+		<extensionPoint	extensionPointID="developer.windowManager.newWizard"
+				extensionPointInterface="hso.autonomy.tools.util.swing.wizard.IWizardDescriptor" />
+		<extensionPoint	extensionPointID="developer.windowManager.importWizard"
+				extensionPointInterface="hso.autonomy.tools.util.swing.wizard.IWizardDescriptor" />
+		<extensionPoint	extensionPointID="developer.windowManager.exportWizard"
+				extensionPointInterface="hso.autonomy.tools.util.swing.wizard.IWizardDescriptor" />
+		<extensionPoint	extensionPointID="developer.windowManager.runWizard"
+				extensionPointInterface="hso.autonomy.tools.util.swing.wizard.IWizardDescriptor" />
+	</extensionPoints>
+	
+	<extensions>
+		<!--Views-->
+		<extension extensionID="developer.perspectiveManager.view.explorerView"
+				extensionPointID="developer.perspectiveManager.view"
+				extensionPointInterface="hso.autonomy.tools.developer.bundles.developer.perspective.IViewDescriptor">
+		</extension>
+		<extension extensionID="developer.perspectiveManager.view.processorView"
+				extensionPointID="developer.perspectiveManager.view"
+				extensionPointInterface="hso.autonomy.tools.developer.bundles.developer.perspective.IViewDescriptor">
+		</extension>
+		
+		<!--StatusObserver-->
+		<extension extensionID="developer.windowManager.statusObserver.processorStatusObserver"
+			extensionPointID="developer.windowManager.statusObserver"
+			extensionPointInterface="hso.autonomy.tools.developer.bundles.developer.window.statusBar.IStatusObserver">
+		</extension>
+	</extensions>
+</bundle>
